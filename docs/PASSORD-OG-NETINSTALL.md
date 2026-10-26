@@ -2,13 +2,15 @@
 
 ## Hva som skjedde
 
-Den nye CRS304-switchen ble funnet i WinBox med fabrikkadressen 192.0.2.1 og RouterOS 7.15.3. PC-en var i 198.51.100.x-nettet. IP-forsøk ga timeout; MAC-tilkobling gjorde at innlogging kunne forsøkes uavhengig av IP-nettet.
+Den nye CRS304-switchen ble funnet i WinBox med fabrikkadressen 192.168.88.1 og RouterOS 7.15.3. PC-en var i 198.51.100.x-nettet. IP-forsøk ga timeout; MAC-tilkobling gjorde at innlogging kunne forsøkes uavhengig av IP-nettet.
 
 Fabrikkpassordet på undersiden var vanskelig å lese. Flere bokstavtolkninger ble prøvd og avvist. Vi klarte ikke å fastslå korrekt passord. Prikkene i WinBox viser ikke passordets faktiske tegn.
 
 Datamatrise-koden ble dekodet lokalt fra et bilde. Den inneholdt serienummeret, ikke passordet. Eskeetiketten hadde heller ikke noe passord. Ingen gjetninger skal behandles som et bekreftet fabrikkpassord.
 
 Vanlig fabrikkreset legger tilbake fabrikkpassordet på nyere enheter og ville derfor ikke løst den uleselige etiketten. MikroTik opplyser at distributøren kan hente passordet fra serienummeret. Vi valgte Netinstall siden switchen var ny og uten oppsett som skulle bevares.
+
+Fabrikk-IP-en 192.168.88.1 er bekreftet i [MikroTiks modellmanual](https://help.mikrotik.com/docs/spaces/UM/pages/271974525/CRS304-4XG-IN). De midlertidige 192.0.2.x-adressene i trinnene nedenfor er eksempler på et separat, isolert Netinstall-nett; de er ikke fabrikkadresser.
 
 ## Netinstall slik vi gjennomførte det
 

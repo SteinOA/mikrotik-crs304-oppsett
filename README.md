@@ -22,8 +22,12 @@ Norsk oppskrift for flere CRS304-4XG-IN som vanlige Ethernet-switcher. Basert p�
 
 ## Programvare
 
-Se [programvareoversikten](software/README.md). Offisielle installasjonsfiler følger som vedlegg til GitHub-utgivelsen; de legges ikke i Git-historikken. WinBox hentes fra MikroTik. Ingen passord, private nøkler, enhetsbackup eller etikettbilder ligger her.
+Se [programvareoversikten](software/README.md). Installeringsfilene hentes direkte fra MikroTiks offisielle nedlastingssider. De inngår ikke i denne offentlige dokumentasjonen. Ingen passord, private nøkler, enhetsbackup eller etikettbilder ligger her.
 
 Dette er en dokumentasjon av oppsettet, ikke en komplett sikkerhetsrevisjon av RouterOS eller hjemmenettverket.
 
-Alle IP-adresser i dette repoet er dokumentasjonseksempler, ikke adresser fra det faktiske nettverket. Bytt dem til et egnet, isolert subnett og ditt eget lokalnett. Fabrikkadressen er erstattet med en eksempeladresse; se leverandørens manual for faktisk standardadresse.
+Fabrikk-IP-en er **192.168.88.1**, ifølge [MikroTiks CRS304-manual](https://help.mikrotik.com/docs/spaces/UM/pages/271974525/CRS304-4XG-IN). Dette er en offentlig standardverdi, ikke en hemmelig adresse. Adressene i 198.51.100.0/24 og 192.0.2.0/24 ellers i veiledningen er dokumentasjonseksempler. Bruk eget lokalnett og et isolert subnett ved Netinstall; ikke kopier eksemplene ukritisk inn i et eksisterende nett.
+
+## Sikkerhet
+
+Se [sikkerhetspolicyen](SECURITY.md). Veiledningen åpner ingen porter mot internett. Hold administrasjon på et betrodd lokalnett, sett et unikt passord selv, og oppbevar enhetsbackup privat. Bruk gjeldende leverandørdokumentasjon ved senere oppsett.
